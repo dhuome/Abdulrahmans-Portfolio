@@ -1,0 +1,378 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #063f60;
+  background: linear-gradient(90deg, #063f60, #314a6b, #192131);
+  margin: -1%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+  padding-top: 10px;
+}
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Optima";
+  font-size: larger;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav img {
+  width: 20%;
+  margin-left: 20px;
+}
+li:hover {
+  color: #990000;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+#box1 {
+  background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif);
+  background-repeat: round;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  align-items: center;
+  background-color: #1b3a4b;
+  margin: 70px 30px 70px 30px;
+}
+#box1 img {
+  max-width: 20%;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px whitesmoke;
+}
+#box1 p,
+h1,
+h4 {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "Optima";
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(0, 62, 104);
+  font-weight: 600;
+  margin-right: 40px;
+}
+#box2 {
+  background-color: rgb(0, 51, 85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1%;
+  box-shadow: 0px 0px 5px black;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#box2 h1 {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "Optima";
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-right: 40px;
+}
+#box3 {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.37);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 40px 30px 40px 30px;
+}
+
+#box3 img {
+  max-width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 2px black;
+}
+#name-project {
+  text-align: center;
+  font-family: "Optima";
+  color: rgb(0, 0, 0);
+}
+#bigbox {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  border-radius: 3px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.384);
+  background: linear-gradient(
+    -45deg,
+    #6b9cd6,
+    #5273a5,
+    #314a6b,
+    #192131,
+    #ffffff
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+img {
+  transition: transform 0.9s;
+}
+img:hover {
+  transform: scale(0.9);
+}
+
+#box4 {
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  max-width: 1000px;
+}
+#box4 img {
+  max-width: 80%;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.473);
+}
+
+#box4 h1,
+h3,
+p {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "Optima";
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+  font-weight: 600;
+  margin-right: 40px;
+}
+
+.slideshow-container {
+  width: 2000px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.466);
+  margin-left: 30px;
+}
+
+h5 {
+  font-family: "Optima";
+  font-size: larger;
+  letter-spacing: 3px;
+}
+h5:hover {
+  font-family: "Optima";
+  font-size: larger;
+  letter-spacing: 3px;
+  color: red;
+  animation: colorchange 20s infinite alternate;
+}
+@keyframes colorchange {
+  0% {
+    color:#6b9cd6;
+  }
+
+  25% {
+    color:#5273a5;
+    ;
+  }
+
+  75% {
+    color:#314a6b;
+    ;
+  }
+
+  100% {
+    color: #192131;;
+  }
+}
+
+#box5{
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+#box6{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+
+}
+footer{
+    background: linear-gradient(90deg, #063f60, #314a6b, #192131);
+}
+
+@media screen and (max-width: 500px){
+  #box1 {
+    background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif);
+    background-repeat: round;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    flex-direction: column;
+    background-color: #1b3a4b;
+    margin: 70px 30px 70px 30px;
+  }
+  #box1 p {
+    font-size: 6px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: "Optima";
+    color: white;
+    margin-right: 40px;
+  }
+  #nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "Optima";
+    font-size: small;
+  }
+  nav img {
+    width: 30%;
+    margin-left: 20px;
+  }
+  #box1 img {
+    max-width: 40%;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px whitesmoke;
+  }
+  #box4 img {
+    max-width: 80%;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  }
+  #box4 {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    max-width: 800px;
+  }
+  #bigbox {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.384);
+  }
+}
