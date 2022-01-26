@@ -133,6 +133,24 @@ h4 {
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
+#bigbox-p{
+    margin: 70px 30px 70px 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  border-radius: 3px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.384);
+  background: linear-gradient(
+        -45deg,
+        #6bd66b,
+        #65a552,
+        #506b31,
+        #243119,
+        #ffffff
+      );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
 
 img {
   transition: transform 0.9s;
@@ -216,48 +234,6 @@ p {
   }
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type="email"] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.466);
-  margin-left: 30px;
-}
-
 h5 {
   font-family: "Optima";
   font-size: larger;
@@ -267,7 +243,6 @@ h5:hover {
   font-family: "Optima";
   font-size: larger;
   letter-spacing: 3px;
-  color: red;
   animation: colorchange 20s infinite alternate;
 }
 @keyframes colorchange {
