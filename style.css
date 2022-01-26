@@ -316,18 +316,28 @@ footer{
   #box1 {
     background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif);
     background-repeat: round;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 0px 5px black;
     background-color: #1b3a4b;
     margin: 70px 30px 70px 30px;
   }
+  #box1 h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #box1 h4 {
+    margin-left: 55px;
+}
   #box1 p {
-    font-size: 6px;
+    font-size: 10px;
     text-align: justify;
     line-height: 30px;
     font-family: "Optima";
     color: white;
-    margin-right: 40px;
+    margin: 40px 30px 40px 30px;
   }
   #nav-links {
     list-style: none;
@@ -361,6 +371,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     background-color: #f5f5f5;
     margin: auto;
     margin-top: 80px;
@@ -372,5 +383,38 @@ footer{
     margin-bottom: 50px;
     border-radius: 3px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.384);
+  }
+  h5 {
+    font-family: "Optima";
+    font-size: small;
+    letter-spacing: 3px;
+  }
+  h1{
+      font-size: large;
+  }
+  h3{
+    font-size: small;
+}
+#gp{
+font-size: 10px;
+}
+.slideshow-container {
+    width: 2000px;
+    margin-right: 20px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.6s ease;
+  }
+  footer{
+    font-family: "Optima";
+    font-size:12px ;
   }
 }
