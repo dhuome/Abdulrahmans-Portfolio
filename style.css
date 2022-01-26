@@ -1,7 +1,6 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
+  margin: 0px;
   scroll-behavior: smooth;
 }
 
@@ -76,7 +75,6 @@ h4 {
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 5px rgb(0, 62, 104);
   font-weight: 600;
-  margin-right: 40px;
 }
 #box2 {
   background-color: rgb(0, 51, 85);
@@ -119,8 +117,7 @@ h4 {
   color: rgb(0, 0, 0);
 }
 #bigbox {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 70px 30px 70px 30px;
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
@@ -276,43 +273,40 @@ h5:hover {
 }
 @keyframes colorchange {
   0% {
-    color:#6b9cd6;
+    color: #6b9cd6;
   }
 
   25% {
-    color:#5273a5;
-    ;
+    color: #5273a5;
   }
 
   75% {
-    color:#314a6b;
-    ;
+    color: #314a6b;
   }
 
   100% {
-    color: #192131;;
+    color: #192131;
   }
 }
 
-#box5{
-    margin: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    color: white;
+#box5 {
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
 }
-#box6{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    color: white;
+#box6 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+footer {
+  background: linear-gradient(90deg, #063f60, #314a6b, #192131);
+}
 
-}
-footer{
-    background: linear-gradient(90deg, #063f60, #314a6b, #192131);
-}
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   #box1 {
     background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif);
     background-repeat: round;
@@ -321,26 +315,28 @@ footer{
     border-radius: 20px;
     box-shadow: 0px 0px 5px black;
     background-color: #1b3a4b;
-    margin: 70px 30px 70px 30px;
+    margin: 20px 30px 70px 30px;
   }
   #box1 h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #box1 h4 {
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    margin-bottom: -20px;
+  }
   #box1 p {
     font-size: 10px;
     text-align: justify;
     line-height: 30px;
     font-family: "Optima";
     color: white;
-    margin: 40px 30px 40px 30px;
+    margin: 40px 30px 60px 30px;
   }
-  #rev-flex{
+  #rev-flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,8 +357,8 @@ footer{
     margin-left: 20px;
   }
   #box1 img {
-    max-width: 40%;
-    margin: 40px;
+    max-width: 30%;
+    margin: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px whitesmoke;
   }
@@ -380,9 +376,7 @@ footer{
     justify-content: center;
     flex-direction: row-reverse;
     background-color: #f5f5f5;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin: 40px 20px 40px 20px;
     max-width: 800px;
   }
   #bigbox {
@@ -396,20 +390,20 @@ footer{
     font-size: small;
     letter-spacing: 3px;
   }
-  h1{
-      font-size: large;
+  h1 {
+    font-size: large;
   }
-  h3{
+  h3 {
     font-size: small;
-}
-#gp{
-font-size: 10px;
-}
-.slideshow-container {
+  }
+  #gp {
+    font-size: 10px;
+  }
+  .slideshow-container {
     width: 2000px;
     margin-right: 20px;
   }
-  
+
   .dot {
     height: 10px;
     width: 10px;
@@ -420,8 +414,25 @@ font-size: 10px;
     display: flex;
     transition: background-color 0.6s ease;
   }
-  footer{
+  footer {
     font-family: "Optima";
-    font-size:12px ;
+    font-size: 12px;
   }
+  html,
+  body {
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
+  nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #063f60;
+  background: linear-gradient(90deg, #063f60, #314a6b, #192131);
+  margin: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+  padding-top: 10px;
+}
 }
