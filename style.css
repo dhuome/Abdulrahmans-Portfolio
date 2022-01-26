@@ -312,7 +312,7 @@ footer{
     background: linear-gradient(90deg, #063f60, #314a6b, #192131);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
   #box1 {
     background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/fcusz42mh-obs-gif-4i7ctk.gif);
     background-repeat: round;
