@@ -371,7 +371,6 @@ footer{
   #bigbox {
     margin-top: 50px;
     margin-bottom: 50px;
-    flex-direction: column;
     border-radius: 3px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.384);
   }
