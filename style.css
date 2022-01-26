@@ -329,8 +329,9 @@ footer{
       justify-content: center;
   }
   #box1 h4 {
-    margin-left: 55px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;}
   #box1 p {
     font-size: 10px;
     text-align: justify;
@@ -338,6 +339,12 @@ footer{
     font-family: "Optima";
     color: white;
     margin: 40px 30px 40px 30px;
+  }
+  #rev-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   #nav-links {
     list-style: none;
